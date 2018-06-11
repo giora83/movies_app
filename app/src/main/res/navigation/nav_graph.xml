@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/moviesFragment">
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.moviesapp.giora.moviesapp.MoviesFragment"
+        android:label="Blank"
+        tools:layout="@layout/movies_fragmant_fragment" >
+        <action
+            android:id="@+id/action_blankFragment_to_blankFragment2"
+            app:destination="@id/moviesDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/moviesDetailsFragment"
+        android:name="com.moviesapp.giora.moviesapp.MoviesDetailsFragment"
+        android:label="Blank2"
+        tools:layout="@layout/movies_details_fragment" />
+</navigation>
